@@ -5,6 +5,8 @@ from django.contrib.auth import logout
 from django.contrib.auth.forms import AuthenticationForm 
 from .forms import RegisterForm
 
+# Models
+from .models import Project, Notification, Role, Tasks
 
 def index(request):
     return render(request, 'core/index.html')
